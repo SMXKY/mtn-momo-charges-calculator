@@ -1,0 +1,197 @@
+*{
+    font-family: roboto, arial ;
+    margin: 0px ;
+    padding: 0px ;
+    box-sizing: border-box ;
+    transition: 0.15s ;
+}
+
+body{
+    display: flex ;
+    justify-content: center ;
+}
+
+.container{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 255, 255) ;
+    padding-bottom: 10px ;
+}
+
+header{
+    background-color: rgb(9, 92, 132) ;
+    width: 800px ;
+    height: 60px ;
+    display: flex ;
+    align-items: center ;
+    padding-left: 10px ;
+}
+
+header p{
+    color: white ;
+    font-family: 'Pacifico', cursive; ;
+    font-size: 20px ;
+    cursor: pointer ;
+}
+
+.main-content{
+    display: grid ;
+    grid-template-columns: 1fr 1fr ;
+    padding-left: 10px ;
+}
+
+.network-logo{
+    width: 50px ; 
+}
+
+.uis-hearder button{
+    background: none ;
+    border: none ;
+    cursor: pointer ;
+    margin-top: 4px ;
+}
+
+.label{
+    font-weight: 500 ;
+    font-size: 16px ;
+}
+
+.chose-operation{
+    display: grid ;
+    grid-template-columns: 250px 1fr;
+    padding-right: 10px ;
+    align-items: center ;
+    margin-top: 4px ;
+}
+
+.operations{
+    background-color: black ;
+    color: rgb(255, 204, 0);
+    cursor: pointer ;
+    padding: 2px 4px ;
+    border-radius: 2px ;
+}
+
+.operations:focus{
+    outline: none ;
+}
+
+.enter-amount{
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    margin-top: 30px ;
+    padding-right: 10px ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-amount:focus{
+    outline: none ;
+}
+
+.input-amount{
+    width: 380px  ;
+    margin-top: 4px ;
+    border-radius: 4px ;
+    border: solid 1px rgb(9, 92, 132) ;
+    height: 30px ;
+    font-size: 16px ;
+    padding-left: 4px ;
+}
+
+.buttons{
+    margin-top: 10px ;
+    display: flex;
+}
+
+.buttons button{
+    border-radius: 2px ;
+    border: none ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    height: 35px ;
+    width: 80px ;
+    font-size: 15px ;
+    cursor: pointer ;
+    color: white ;
+    background-color: rgb(255, 204, 0) ;
+}
+
+.buttons button:hover{
+    background-color: white ;
+    color: rgb(255, 204, 0) ;
+    border: solid 1px rgb(255, 204, 0) ; 
+}
+
+.breack-down-of-operation div{
+    display: grid ;
+    grid-template-columns: 250px 1fr;
+    padding-right: 10px ;
+    align-items: center ;
+    margin-top: 10px ;
+}
+
+.breack-down-of-operation{
+    padding-left: 10px ;
+}
+
+.ss-header{
+    margin-top: 4px ;
+}
+
+.break-down{
+    font-size: 17px ;
+    color: rgb(9, 92, 132) ;
+    display: inline ;
+    padding: 1px 1px ;
+    margin-left: 10px ;
+    font-weight: 600 ;
+}
+
+@media(max-width: 500px) {
+    header{
+        background-color: rgb(9, 92, 132) ;
+        width: 370px ;
+        height: 60px ;
+        display: flex ;
+        align-items: center ;
+        padding-left: 10px ;
+    }
+
+    .main-content{
+        display: grid ;
+        grid-template-columns: 1fr ;
+        padding-left: 10px ;
+    }
+
+    .chose-operation{
+        display: grid ;
+        grid-template-columns: 160px 1fr;
+        align-items: center ;
+        margin-top: 4px ;
+    }
+
+    .container{
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        background-color: rgb(255, 255, 255) ;
+        padding-bottom: 10px ;
+        width: 370px ;
+        overflow: scroll ;
+        margin-top: 4px ;
+    }
+
+    .input-amount{
+        width: 350px  ;
+        margin-top: 4px ;
+        border-radius: 4px ;
+        border: solid 1px rgb(9, 92, 132) ;
+        height: 30px ;
+        font-size: 16px ;
+        padding-left: 4px ;
+    }
+}
